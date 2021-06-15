@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFC01C032678C3DA00B1B10B /* Cash_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01C022678C3DA00B1B10B /* Cash_AppApp.swift */; };
+		AFC01C052678C3DA00B1B10B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01C042678C3DA00B1B10B /* ContentView.swift */; };
+		AFC01C072678C3DC00B1B10B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC01C062678C3DC00B1B10B /* Assets.xcassets */; };
+		AFC01C0A2678C3DC00B1B10B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC01C092678C3DC00B1B10B /* Preview Assets.xcassets */; };
+		AFC01C162678CDA600B1B10B /* CashMarket-BoldRounded.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFC01C132678CDA500B1B10B /* CashMarket-BoldRounded.otf */; };
+		AFC01C172678CDA600B1B10B /* CashMarket-MediumRounded.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFC01C142678CDA500B1B10B /* CashMarket-MediumRounded.otf */; };
+		AFC01C182678CDA600B1B10B /* CashMarket-RegularRounded.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFC01C152678CDA500B1B10B /* CashMarket-RegularRounded.otf */; };
+		AFC01C1C2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01C1B2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift */; };
+		AFC01C2B2678DFAC00B1B10B /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01C2A2678DFAC00B1B10B /* TextStyles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AFC01BFF2678C3DA00B1B10B /* Cash App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cash App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC01C022678C3DA00B1B10B /* Cash_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash_AppApp.swift; sourceTree = "<group>"; };
+		AFC01C042678C3DA00B1B10B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFC01C062678C3DC00B1B10B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFC01C092678C3DC00B1B10B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFC01C0B2678C3DC00B1B10B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFC01C132678CDA500B1B10B /* CashMarket-BoldRounded.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CashMarket-BoldRounded.otf"; sourceTree = "<group>"; };
+		AFC01C142678CDA500B1B10B /* CashMarket-MediumRounded.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CashMarket-MediumRounded.otf"; sourceTree = "<group>"; };
+		AFC01C152678CDA500B1B10B /* CashMarket-RegularRounded.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CashMarket-RegularRounded.otf"; sourceTree = "<group>"; };
+		AFC01C1B2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberOnboardingView.swift; sourceTree = "<group>"; };
+		AFC01C2A2678DFAC00B1B10B /* TextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFC01BFC2678C3DA00B1B10B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFC01BF62678C3DA00B1B10B = {
+			isa = PBXGroup;
+			children = (
+				AFC01C012678C3DA00B1B10B /* Cash App */,
+				AFC01C002678C3DA00B1B10B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFC01C002678C3DA00B1B10B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFC01BFF2678C3DA00B1B10B /* Cash App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFC01C012678C3DA00B1B10B /* Cash App */ = {
+			isa = PBXGroup;
+			children = (
+				AFC01C022678C3DA00B1B10B /* Cash_AppApp.swift */,
+				AFC01C042678C3DA00B1B10B /* ContentView.swift */,
+				AFC01C1E2678DC9700B1B10B /* Onboarding */,
+				AFC01C062678C3DC00B1B10B /* Assets.xcassets */,
+				AFC01C122678CDA500B1B10B /* fonts */,
+				AFC01C0B2678C3DC00B1B10B /* Info.plist */,
+				AFC01C082678C3DC00B1B10B /* Preview Content */,
+				AFC01C242678DE4300B1B10B /* Components */,
+			);
+			path = "Cash App";
+			sourceTree = "<group>";
+		};
+		AFC01C082678C3DC00B1B10B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AFC01C092678C3DC00B1B10B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFC01C122678CDA500B1B10B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AFC01C132678CDA500B1B10B /* CashMarket-BoldRounded.otf */,
+				AFC01C142678CDA500B1B10B /* CashMarket-MediumRounded.otf */,
+				AFC01C152678CDA500B1B10B /* CashMarket-RegularRounded.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		AFC01C1E2678DC9700B1B10B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AFC01C1B2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AFC01C242678DE4300B1B10B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AFC01C2A2678DFAC00B1B10B /* TextStyles.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFC01BFE2678C3DA00B1B10B /* Cash App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC01C0E2678C3DC00B1B10B /* Build configuration list for PBXNativeTarget "Cash App" */;
+			buildPhases = (
+				AFC01BFB2678C3DA00B1B10B /* Sources */,
+				AFC01BFC2678C3DA00B1B10B /* Frameworks */,
+				AFC01BFD2678C3DA00B1B10B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cash App";
+			productName = "Cash App";
+			productReference = AFC01BFF2678C3DA00B1B10B /* Cash App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFC01BF72678C3DA00B1B10B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AFC01BFE2678C3DA00B1B10B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = AFC01BFA2678C3DA00B1B10B /* Build configuration list for PBXProject "Cash App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFC01BF62678C3DA00B1B10B;
+			productRefGroup = AFC01C002678C3DA00B1B10B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFC01BFE2678C3DA00B1B10B /* Cash App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFC01BFD2678C3DA00B1B10B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC01C0A2678C3DC00B1B10B /* Preview Assets.xcassets in Resources */,
+				AFC01C172678CDA600B1B10B /* CashMarket-MediumRounded.otf in Resources */,
+				AFC01C182678CDA600B1B10B /* CashMarket-RegularRounded.otf in Resources */,
+				AFC01C072678C3DC00B1B10B /* Assets.xcassets in Resources */,
+				AFC01C162678CDA600B1B10B /* CashMarket-BoldRounded.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFC01BFB2678C3DA00B1B10B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC01C1C2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift in Sources */,
+				AFC01C2B2678DFAC00B1B10B /* TextStyles.swift in Sources */,
+				AFC01C052678C3DA00B1B10B /* ContentView.swift in Sources */,
+				AFC01C032678C3DA00B1B10B /* Cash_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AFC01C0C2678C3DC00B1B10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFC01C0D2678C3DC00B1B10B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFC01C0F2678C3DC00B1B10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cash App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2QG5WSN24S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cash App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kree.designcode.Cash-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFC01C102678C3DC00B1B10B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cash App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2QG5WSN24S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cash App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kree.designcode.Cash-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFC01BFA2678C3DA00B1B10B /* Build configuration list for PBXProject "Cash App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC01C0C2678C3DC00B1B10B /* Debug */,
+				AFC01C0D2678C3DC00B1B10B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFC01C0E2678C3DC00B1B10B /* Build configuration list for PBXNativeTarget "Cash App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC01C0F2678C3DC00B1B10B /* Debug */,
+				AFC01C102678C3DC00B1B10B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFC01BF72678C3DA00B1B10B /* Project object */;
+}
