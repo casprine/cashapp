@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct PhoneNumberOnboardingView: View {
-    @State private var phone : String = ""
+    @State private var phone : String = "0545179957"
+    
 
     var body: some View {
         GeometryReader { geometry in
@@ -21,7 +22,7 @@ struct PhoneNumberOnboardingView: View {
                 .padding()
                 
                 Text("Enter your phone number")
-                    .medium(size: 18)
+                    .medium(size: 20)
                 
                 
                 TextField("(+233) 54 517 9957",text: $phone)
@@ -30,10 +31,12 @@ struct PhoneNumberOnboardingView: View {
                     .ignoresSafeArea(.keyboard, edges: .bottom)
                 
                
-                Text("By entering your phone number and tapping Next, you agree to the Terms")
-                    .book(size: 12)
-                    .foregroundColor(.gray)
-                    .padding(.top, 10)
+                if phone.count != 0 {
+                    Text("By entering your phone number and tapping Next, you agree to the Terms")
+                        .book(size: 12)
+                        .foregroundColor(.gray)
+                        .padding(.top, 10)
+                }
                     
                 
                 Spacer()
@@ -56,7 +59,9 @@ struct PhoneNumberOnboardingView: View {
                     Spacer()
  
                     NavigationLink(
-                        destination: EmailConfirmationView(phoneNumber: self.$phone)
+                        destination: EmailConfirmationView(
+//                            phoneNumber: $phone
+                        )
                     ) {
                         Text("Next")
                             .medium(size: 16)
