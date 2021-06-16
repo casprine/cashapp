@@ -3,4 +3,54 @@
    uuid = "6DAB60B8-6D69-4FD0-8507-2ECEAE3A3C94"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD7B07E5-2136-4198-BA63-F4E1588A8DF3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cash App/Onboarding/PhoneNumberOnboardingView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "PhoneNumberOnboardingView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "FD7B07E5-2136-4198-BA63-F4E1588A8DF3 - dc3dfa2ee5587b1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Cash_App.PhoneNumberOnboardingView.(phone in _7191ECB7A1E80E9206ACD7853E2A5873) : Swift.String"
+                  moduleName = "Cash App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/casprine/Desktop/studies/swift-ui/projects/Cash%20App/Cash%20App/Onboarding/PhoneNumberOnboardingView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "FD7B07E5-2136-4198-BA63-F4E1588A8DF3 - de783e1c3e3b93c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cash_App.PhoneNumberOnboardingView.init() -&gt; Cash_App.PhoneNumberOnboardingView"
+                  moduleName = "Cash App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/casprine/Desktop/studies/swift-ui/projects/Cash%20App/Cash%20App/Onboarding/PhoneNumberOnboardingView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

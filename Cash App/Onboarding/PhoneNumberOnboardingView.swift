@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PhoneNumberOnboardingView: View {
-    @State private var email: String  = ""
     @State private var phone : String = ""
 
     var body: some View {
@@ -25,8 +24,8 @@ struct PhoneNumberOnboardingView: View {
                     .medium(size: 18)
                 
                 
-                TextField("(+233) 54 517 9957",text: $email)
-                    .padding(.top, 10)
+                TextField("(+233) 54 517 9957",text: $phone)
+                    .padding(.top, 5)
                     .font(.custom("CashMarket-RegularRounded", size:17))
                     .ignoresSafeArea(.keyboard, edges: .bottom)
                 
@@ -42,7 +41,6 @@ struct PhoneNumberOnboardingView: View {
                 HStack {
                     Button(action:{
                         withAnimation{
-                            
                         }
                     })
                     {
@@ -58,7 +56,7 @@ struct PhoneNumberOnboardingView: View {
                     Spacer()
  
                     NavigationLink(
-                        destination: ContentView()
+                        destination: EmailConfirmationView(phoneNumber: self.$phone)
                     ) {
                         Text("Next")
                             .medium(size: 16)

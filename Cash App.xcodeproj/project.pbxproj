@@ -16,6 +16,7 @@
 		AFC01C182678CDA600B1B10B /* CashMarket-RegularRounded.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFC01C152678CDA500B1B10B /* CashMarket-RegularRounded.otf */; };
 		AFC01C1C2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01C1B2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift */; };
 		AFC01C2B2678DFAC00B1B10B /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC01C2A2678DFAC00B1B10B /* TextStyles.swift */; };
+		AFF3B9CB267985400092F8E2 /* EmailConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF3B9CA267985400092F8E2 /* EmailConfirmationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AFC01C152678CDA500B1B10B /* CashMarket-RegularRounded.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CashMarket-RegularRounded.otf"; sourceTree = "<group>"; };
 		AFC01C1B2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberOnboardingView.swift; sourceTree = "<group>"; };
 		AFC01C2A2678DFAC00B1B10B /* TextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
+		AFF3B9CA267985400092F8E2 /* EmailConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailConfirmationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC01C1B2678DC8A00B1B10B /* PhoneNumberOnboardingView.swift */,
+				AFF3B9CA267985400092F8E2 /* EmailConfirmationView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				AFC01C2B2678DFAC00B1B10B /* TextStyles.swift in Sources */,
 				AFC01C052678C3DA00B1B10B /* ContentView.swift in Sources */,
 				AFC01C032678C3DA00B1B10B /* Cash_AppApp.swift in Sources */,
+				AFF3B9CB267985400092F8E2 /* EmailConfirmationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+//    @Binding var phone : String?
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .font(.custom("CashMarket-RegularRounded", size: 20))
+        VStack{
+            Text("Hello, world!")
+                .padding()
+                .font(.custom("CashMarket-RegularRounded", size: 20))
+            
+//            Text("\(phone ??  "")")
+        }
     }
 }
 
