@@ -1,8 +1,8 @@
 //
-//  ContactHelpers.swift
-//  Cash App
+//  ContactService.swift
+//  CashApp
 //
-//  Created by Cas on 16/06/2021.
+//  Created by Cas on 17/06/2021.
 //
 
 import Foundation
@@ -17,7 +17,6 @@ struct Contact {
     var numbers: [PhoneNumber]
 
     var systemContact: CNContact? // --> This one is important! We keep a reference to later make it easier for editing the same contact.
-
     struct PhoneNumber { // --> We also have a PhoneNumber struct as they can have labels and we want to display them
         var label: String
         var number: String
@@ -55,9 +54,6 @@ struct Contact {
 }
 
 
-
-
-
 class ContactService {
     
     var contactStore: CNContactStore?
@@ -81,7 +77,6 @@ class ContactService {
                 do {
                     let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey] as [CNKeyDescriptor]
                     // --> The keysToFetch describe which content we actually want to access. It is good practice to keep this as limited as your app allows.
-
                     var contacts = [CNContact]()
 
                     let request = CNContactFetchRequest(keysToFetch: keysToFetch)
@@ -104,7 +99,6 @@ class ContactService {
                         return nil
                     })
                             .sorted(by: { getName($0) < getName($1) }) // --> order by lastname/firstname
-
                         completionHandler(formatted, nil)
                 } catch {
                     print("Failed to fetch contact, error: \(error)")

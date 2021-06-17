@@ -1,8 +1,8 @@
 //
 //  InviteContactsView.swift
-//  Cash App
+//  CashApp
 //
-//  Created by Cas on 16/06/2021.
+//  Created by Cas on 17/06/2021.
 //
 
 import SwiftUI
@@ -12,15 +12,13 @@ import Contacts
 
 struct InviteContactsView: View {
     @ObservedObject var contactsModel = ContactsViewModel()
-    
-    
-    
+
     var body: some View {
         GeometryReader{ geometry in
             VStack (alignment:.leading) {
                 HStack (alignment: .center, spacing: nil, content: {
                     Spacer()
-                    Image(systemName:"xmark")
+                    Image(systemName:"xmark").font(.system(size:20))
                 })
                 .padding()
 
@@ -39,7 +37,7 @@ struct InviteContactsView: View {
                             .cornerRadius(50)
                             
                             Text("Text Friends and Get $15 each")
-                                .medium(size:18)
+                                .medium(size:25)
                                 .padding(.top, 5)
                         }
                         .padding(.horizontal, 20)
@@ -47,7 +45,7 @@ struct InviteContactsView: View {
           
                         if contactsModel.noPermission {
                                 Text("Allow Contact Access to \neasily invite your friends")
-                                    .book(size: 14)
+                                    .book(size: 18)
                                     .foregroundColor(.gray)
                                     .padding(.horizontal,20)
                                     .padding(.top, 5)
@@ -76,13 +74,13 @@ struct Footer: View  {
                 }
             }){
                 Text("Skip")
-                    .medium(size: 15)
+                    .medium(size: 18)
                     .frame(maxWidth:.infinity)
-                    .padding(.vertical, 10)
+                    .padding(.vertical, 15)
                     .foregroundColor(Color("gray.800"))
             }
             .background(Color("gray.200"))
-            .cornerRadius(20, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+            .cornerRadius(30, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             
             Button(action:{
                 withAnimation{
@@ -90,13 +88,13 @@ struct Footer: View  {
                 }
             }){
                 Text("Continue")
-                    .medium(size: 15)
+                    .medium(size: 18)
                     .frame(maxWidth:.infinity)
-                    .padding(.vertical, 10)
+                    .padding(.vertical, 15)
                     .foregroundColor(Color.white)
             }
             .background(Color("green"))
-            .cornerRadius(20, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+            .cornerRadius(30, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             
             
         }
@@ -151,7 +149,7 @@ struct ContactView: View {
     var body: some View {
         HStack{
             VStack(alignment:.leading){
-                Text("David Manor").medium(size: 16)
+                Text("David Manor").medium(size: 18)
                 Text("(233) 545 1799 57").book(size: 13).foregroundColor(Color("gray.400"))
                     .padding(.top,1)
             }
@@ -165,7 +163,7 @@ struct ContactView: View {
             }){
                 Text("Get $15")
                     .foregroundColor(.white)
-                    .medium(size: 13)
+                    .medium(size: 16)
                     .padding(.vertical, 6)
                     .padding(.horizontal, 12)
             }
