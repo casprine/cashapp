@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSContactsUsageDescription</key>
+	<string>I need to fetch the contacts to determine if any of them are existing users in my app</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CashMarket-MediumRounded.otf</string>
+		<string>CashMarket-RegularRounded.otf</string>
+		<string>CashMarket-BoldRounded.otf</string>
+	</array>
+</dict>
+</plist>
