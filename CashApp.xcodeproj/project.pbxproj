@@ -20,6 +20,7 @@
 		AF3377BB267BCF77009A29AE /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377BA267BCF77009A29AE /* ContactsViewModel.swift */; };
 		AF3377BD267BD4BF009A29AE /* InviteContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377BC267BD4BF009A29AE /* InviteContactsView.swift */; };
 		AF3377BF267BD4EF009A29AE /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377BE267BD4EF009A29AE /* ContactService.swift */; };
+		AF3377C1267BD6F3009A29AE /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377C0267BD6F3009A29AE /* WelcomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AF3377BA267BCF77009A29AE /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		AF3377BC267BD4BF009A29AE /* InviteContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteContactsView.swift; sourceTree = "<group>"; };
 		AF3377BE267BD4EF009A29AE /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
+		AF3377C0267BD6F3009A29AE /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				AF3377A8267BC394009A29AE /* PhoneNumberOnboardingView.swift */,
 				AF3377AA267BC410009A29AE /* TextStyles.swift */,
 				AF3377BC267BD4BF009A29AE /* InviteContactsView.swift */,
+				AF3377C0267BD6F3009A29AE /* WelcomeScreen.swift */,
 				AF3377BE267BD4EF009A29AE /* ContactService.swift */,
 				AF33779E267BBD42009A29AE /* Assets.xcassets */,
 				AF3377A0267BBD42009A29AE /* Preview Content */,
@@ -180,6 +183,7 @@
 				AF3377AB267BC410009A29AE /* TextStyles.swift in Sources */,
 				AF3377A9267BC394009A29AE /* PhoneNumberOnboardingView.swift in Sources */,
 				AF3377BD267BD4BF009A29AE /* InviteContactsView.swift in Sources */,
+				AF3377C1267BD6F3009A29AE /* WelcomeScreen.swift in Sources */,
 				AF3377B5267BCC68009A29AE /* PostPhoneNumberView.swift in Sources */,
 				AF3377BF267BD4EF009A29AE /* ContactService.swift in Sources */,
 				AF3377BB267BCF77009A29AE /* ContactsViewModel.swift in Sources */,

@@ -14,8 +14,6 @@ struct InviteContactsView: View {
     @ObservedObject var contactsModel = ContactsViewModel()
     
     
-    
-    
 
     var body: some View {
         GeometryReader{ geometry in
