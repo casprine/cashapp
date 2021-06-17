@@ -57,17 +57,17 @@ struct PhoneNumberOnboardingView: View {
                     .cornerRadius(30)
                     Spacer()
                     
-//                    NavigationLink(
-//                        destination: Text("Hello  world")
-//                    ) {
-//                        Text("Next")
-//                            .medium(size: 16)
-//                            .padding(12)
-//                            .foregroundColor(.white)
-//                            .frame(maxWidth:.infinity)
-//                    }
-//                    .background(Color.green)
-//                    .cornerRadius(30)
+                    NavigationLink(
+                        destination: PostPhoneNumberView()
+                    ) {
+                        Text("Next")
+                            .medium(size: 16)
+                            .padding(12)
+                            .foregroundColor(.white)
+                            .frame(maxWidth:.infinity)
+                    }
+                    .background(Color.green)
+                    .cornerRadius(30)
                 }
                 
                 .padding(.bottom, 20)

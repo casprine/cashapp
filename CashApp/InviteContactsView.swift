@@ -12,6 +12,10 @@ import Contacts
 
 struct InviteContactsView: View {
     @ObservedObject var contactsModel = ContactsViewModel()
+    
+    
+    
+    
 
     var body: some View {
         GeometryReader{ geometry in
@@ -64,6 +68,8 @@ struct InviteContactsView: View {
 
 struct Footer: View  {
     @ObservedObject var contactsModel = ContactsViewModel()
+    
+    
     var body: some View {
         VStack(spacing:12){
             Spacer()

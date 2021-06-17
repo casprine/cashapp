@@ -12,15 +12,15 @@ class ContactsViewModel: ObservableObject {
     var contactServce = ContactService()
     
     @Published var contacts: [Contact] = []
-    @Published var noPermission = false
+    @Published var noPermission = true
     
         
-    init() {
-        self.fetch()
-    }
-    
+//    init() {
+//        self.fetch()
+//    }
+//
     func fetch() {
-        self.contactServce.getSystemContacts{ (contacts, error) in
+        self.contactServce.getSystemContacts { (contacts, error) in
             guard error == nil else {
                 self.contacts = []
                 self.noPermission = true

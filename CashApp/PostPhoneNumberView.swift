@@ -8,7 +8,6 @@
 import SwiftUI
 
 
-
 enum ActiveScreenState  {
     case confirmation
     case fullName
