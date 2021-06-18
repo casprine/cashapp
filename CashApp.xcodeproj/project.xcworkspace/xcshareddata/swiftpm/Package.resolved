@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FontAwesomeSwiftUI",
+        "repositoryURL": "https://github.com/onmyway133/FontAwesomeSwiftUI",
+        "state": {
+          "branch": null,
+          "revision": "112baccbd390338dda124f26cd395e8cbd13ecda",
+          "version": "1.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

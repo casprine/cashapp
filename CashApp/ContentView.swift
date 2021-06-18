@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import FontAwesomeSwiftUI
 
 struct ContentView: View {
+    
+    init(){
+        FontAwesome.register()
+    }
+    
     var body: some View {
-            WelcomeScreen()
+            HomeView()
     }
 }
 
