@@ -23,7 +23,7 @@ struct BankingView: View {
                 } else {
                     ActionItem(title: "Bitcoin", icon: "bitcoinsign.circle", iconBgColor:Color.blue)
                 }
-                ActionItem(title: "Limits", icon:"arrowtriangle.up.fill", iconBgColor: Color("gray.200"), iconColor: Color("gray.400"))
+                ActionItem(title: "Limits", icon:"arrowtriangle.up.fill", iconBgColor: Color("gray.100"), iconColor: Color("gray.400"))
                 
             }.padding(.top, 50)
             
@@ -58,7 +58,9 @@ struct CashBalanceView: View {
                 .book(size: 18)
                 .foregroundColor(Color("gray.700"))
                 .padding(.top, 5)
-        }.padding(.top, 30)
+        }
+        .padding(.top, 30)
+        
     }
 }
 
@@ -81,6 +83,9 @@ struct CTAButtons: View {
             .background(Color("gray.100"))
             .cornerRadius(30)
             
+            
+            
+            
             Spacer()
             
             Button (action:{
@@ -96,8 +101,10 @@ struct CTAButtons: View {
             }
             .background(Color("gray.100"))
             .cornerRadius(30)
+            
             Spacer()
         }
+        
         .padding(.top, 65)
     }
 }
@@ -117,7 +124,7 @@ struct AccountDetailsView: View {
                     
             }
             .padding(.horizontal, 30)
-            
+
             Spacer()
             VStack(spacing:0){
                 Text("893 **** ****")
@@ -129,9 +136,11 @@ struct AccountDetailsView: View {
                     .padding(.top, 4)
             }
             .padding(.horizontal, 30)
-            Spacer()
-        }.padding(.top, 40)
         
+            Spacer()
+        }
+        .padding(.top, 31)
+        .padding(.bottom, 6)
     }
 }
 
@@ -158,7 +167,7 @@ struct ActionItem :View {
                 
                 
                 Text(title)
-                    .medium(size:20)
+                    .medium(size:19)
                     .padding(.leading, 10)
                     .foregroundColor(Color("gray.800"))
                 

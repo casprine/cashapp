@@ -24,6 +24,7 @@
 		AF3377C3267BD9F4009A29AE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377C2267BD9F4009A29AE /* HomeView.swift */; };
 		AF3377C5267BDA17009A29AE /* BankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377C4267BDA17009A29AE /* BankingView.swift */; };
 		AF3377C8267BDEB9009A29AE /* FontAwesomeSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF3377C7267BDEB9009A29AE /* FontAwesomeSwiftUI */; };
+		AF9D3E67267CCE2600414027 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9D3E66267CCE2600414027 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		AF3377C0267BD6F3009A29AE /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		AF3377C2267BD9F4009A29AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AF3377C4267BDA17009A29AE /* BankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingView.swift; sourceTree = "<group>"; };
+		AF9D3E66267CCE2600414027 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				AF33779E267BBD42009A29AE /* Assets.xcassets */,
 				AF3377A0267BBD42009A29AE /* Preview Content */,
 				AF3377AC267BC42F009A29AE /* fonts */,
+				AF9D3E66267CCE2600414027 /* SplashScreen.swift */,
 			);
 			path = CashApp;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9D3E67267CCE2600414027 /* SplashScreen.swift in Sources */,
 				AF3377AB267BC410009A29AE /* TextStyles.swift in Sources */,
 				AF3377A9267BC394009A29AE /* PhoneNumberOnboardingView.swift in Sources */,
 				AF3377BD267BD4BF009A29AE /* InviteContactsView.swift in Sources */,

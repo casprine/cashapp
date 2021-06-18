@@ -13,11 +13,11 @@ Some of CashApps views built with SwiftUI. This project is primarily for educati
 
 # Views
 
-- [ ] Phone number Onboarding
-- [ ] Invite Contacts
+- [x] Phone number Onboarding
+- [x] Invite Contacts
+- [x] Banking
 - [ ] Profile
 - [ ] Investing
 - [ ] Send & Request Money
 - [ ] Cash Card
-- [ ] Banking
 - [ ] QR Code scanner
