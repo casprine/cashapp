@@ -15,7 +15,7 @@ Some of CashApps views built with SwiftUI. This project is primarily for educati
 - [x] Phone number Onboarding
 - [x] Invite Contacts
 - [x] Banking
-- [ ] Profile
+- [x] Profile
 - [ ] Investing
 - [ ] Send & Request Money
 - [ ] Cash Card
