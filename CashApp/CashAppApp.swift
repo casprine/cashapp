@@ -12,6 +12,7 @@ struct CashAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ContactStore())
         }
     }
 }

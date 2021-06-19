@@ -17,7 +17,7 @@ struct PhoneNumberOnboardingView: View {
                 HStack (alignment: .center, spacing: nil, content: {
                     Spacer()
                     Text("?")
-                        .bold(size:20)
+                        .bold(size:24)
                 })
                 .padding()
                 
@@ -26,17 +26,16 @@ struct PhoneNumberOnboardingView: View {
                     
                 TextField("(+233) 54 517 9957",text: $phone)
                     .padding(.top, 5)
-                    .font(.custom("CashMarket-RegularRounded", size:17))
+                    .font(.custom("CashMarket-RegularRounded", size:18))
                     .ignoresSafeArea(.keyboard, edges: .bottom)
                 
                 
                 if phone.count != 0 {
                     Text("By entering your phone number and tapping Next, you agree to the Terms")
-                        .book(size: 15)
+                        .book(size: 17)
                         .foregroundColor(.gray)
                         .padding(.top, 10)
                 }
-                
                 
                 Spacer()
                 
@@ -47,8 +46,8 @@ struct PhoneNumberOnboardingView: View {
                     })
                     {
                         Text("Use Email")
-                            .medium(size: 16)
-                            .padding(12)
+                            .medium(size: 20)
+                            .padding(15)
                             .foregroundColor(.white)
                             .frame(maxWidth:.infinity)
                         
@@ -61,8 +60,8 @@ struct PhoneNumberOnboardingView: View {
                         destination: PostPhoneNumberView()
                     ) {
                         Text("Next")
-                            .medium(size: 16)
-                            .padding(12)
+                            .medium(size: 20)
+                            .padding(15)
                             .foregroundColor(.white)
                             .frame(maxWidth:.infinity)
                     }

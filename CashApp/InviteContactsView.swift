@@ -10,47 +10,48 @@ import Foundation
 import Contacts
 
 
+
 struct InviteContactsView: View {
-    @ObservedObject var contactsModel = ContactsViewModel()
+    @EnvironmentObject var contactsModel: ContactStore
     
-    
-
     var body: some View {
-        GeometryReader{ geometry in
-            VStack (alignment:.leading) {
-                HStack (alignment: .center, spacing: nil, content: {
-                    Spacer()
-                    Image(systemName:"xmark").font(.system(size:20))
-                })
-                .padding()
-
-                
+        NavigationView{
+            GeometryReader{ geometry in
+                VStack (alignment:.leading) {
+                    HStack (alignment: .center, spacing: nil, content: {
+                        Spacer()
+                        NavigationLink(destination: WelcomeScreen()) {
+                            Image(systemName:"xmark").font(.system(size:20)).foregroundColor(Color.black)
+                        }
+                    })
+                        .padding()
+                    
                     VStack (alignment:.leading){
                         VStack(alignment:.leading){
+                            
                             HStack{
                                 Image(systemName: "person.2.fill")
+                                    .background(RoundedRectangle(cornerRadius: 25)
+                                                    .foregroundColor(Color.accentColor)
+                                                    .frame(width:50,height:50)
+                                    )
                                     .foregroundColor(.white)
-                                    .padding()
-                                    .font(.system(size:14))
-                                
-                            }
-                            .background(Color("green"))
-                            .frame(width: 40, height: 40)
-                            .cornerRadius(50)
+                                    .font(.system(size:18))
+                            }.padding(.leading, 10)
                             
                             Text("Text Friends and Get $15 each")
                                 .medium(size:25)
-                                .padding(.top, 5)
+                                .padding(.top, 20)
                         }
                         .padding(.horizontal, 20)
                         
-          
+                        
                         if contactsModel.noPermission {
-                                Text("Allow Contact Access to \neasily invite your friends")
-                                    .book(size: 18)
-                                    .foregroundColor(.gray)
-                                    .padding(.horizontal,20)
-                                    .padding(.top, 5)
+                            Text("Allow Contact Access to \neasily invite your friends")
+                                .book(size: 18)
+                                .foregroundColor(.gray)
+                                .padding(.horizontal,20)
+                                .padding(.top, 5)
                             Footer()
                         } else {
                             SearchForm()
@@ -60,31 +61,30 @@ struct InviteContactsView: View {
                     }
                 }
             }
+            .navigationBarHidden(true)
+        }
+        .navigationBarHidden(true)
     }
 }
 
 
 struct Footer: View  {
-    @ObservedObject var contactsModel = ContactsViewModel()
-    
-    
+    @EnvironmentObject var contactsModel: ContactStore
     var body: some View {
         VStack(spacing:12){
             Spacer()
             
-            Button(action:{
-                withAnimation{
-                    contactsModel.fetch()
+            NavigationLink(destination: WelcomeScreen()) {
+                HStack {
+                    Text("Skip")
+                        .medium(size: 18)
+                        .frame(maxWidth:.infinity)
+                        .padding(.vertical, 15)
+                        .foregroundColor(Color("gray.800"))
                 }
-            }){
-                Text("Skip")
-                    .medium(size: 18)
-                    .frame(maxWidth:.infinity)
-                    .padding(.vertical, 15)
-                    .foregroundColor(Color("gray.800"))
+                .background(Color("gray.200"))
+                .cornerRadius(30)
             }
-            .background(Color("gray.200"))
-            .cornerRadius(30, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             
             Button(action:{
                 withAnimation{
@@ -106,8 +106,6 @@ struct Footer: View  {
     }
 }
 
-
-
 struct SearchForm: View {
     @State private var searchValue : String  = ""
     var body: some View{
@@ -127,19 +125,24 @@ struct SearchForm: View {
 }
 
 struct ContactListView: View  {
+    @EnvironmentObject var contactsModel: ContactStore
+    
+    
     var body: some View{
         VStack(alignment:.leading){
             
             Text("CONTACTS")
-                .medium(size: 11)
+                .medium(size: 13)
                 .foregroundColor(Color("gray.400"))
                 .padding(.top, 20)
                 .padding(.horizontal, 20)
             
+    
             
             ScrollView{
-                ForEach(0..<20){ index in
-                        ContactView()
+                ForEach(contactsModel.contacts , id:\.id){ contact in
+                    ContactView(name: "\(contact.givenName) \(contact.lastName)", phoneNumber: contact.numbers[0].number
+                    )
                 }
             }.background(Color.white)
         }
@@ -150,12 +153,17 @@ struct ContactListView: View  {
 
 
 struct ContactView: View {
+    var name: String
+    var phoneNumber: String
+    
     var body: some View {
         HStack{
             VStack(alignment:.leading){
-                Text("David Manor").medium(size: 18)
-                Text("(233) 545 1799 57").book(size: 13).foregroundColor(Color("gray.400"))
-                    .padding(.top,1)
+                Text(name)
+                    .medium(size: 20)
+                Text(phoneNumber)
+                    .book(size: 16)
+                    .foregroundColor(Color("gray.400"))
             }
             
             Spacer()
@@ -167,7 +175,7 @@ struct ContactView: View {
             }){
                 Text("Get $15")
                     .foregroundColor(.white)
-                    .medium(size: 16)
+                    .medium(size: 18)
                     .padding(.vertical, 6)
                     .padding(.horizontal, 12)
             }
@@ -188,6 +196,7 @@ struct InviteContactsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
             InviteContactsView()
+                .environmentObject(ContactStore())
                 .navigationBarHidden(true)
         }
         

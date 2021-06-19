@@ -13,7 +13,6 @@ struct Contact {
     var id = UUID()
     var givenName: String
     var lastName: String
-
     var numbers: [PhoneNumber]
 
     var systemContact: CNContact? // --> This one is important! We keep a reference to later make it easier for editing the same contact.
@@ -63,7 +62,6 @@ class ContactService {
         self.contactStore!.requestAccess(for: .contacts) { success, error in
             if (success) {
                 completionHandler(true)
-                print("Got Access")
             } else {
                 completionHandler(false)
             }
@@ -80,12 +78,12 @@ class ContactService {
                     var contacts = [CNContact]()
 
                     let request = CNContactFetchRequest(keysToFetch: keysToFetch)
-
+                    
                     try self.contactStore!.enumerateContacts(with: request) {
                         (contact, stop) in
                         contacts.append(contact)
                     }
-
+        
                     func getName(_ contact: Contact) -> String { // --> see below for the Contact model and why we implement one
                         return contact.lastName.count > 0 ? contact.lastName : contact.givenName    // --> essentially, this is some sugar to order the contacts, as we often want to have them already ordered and not do it inside the model
                     }

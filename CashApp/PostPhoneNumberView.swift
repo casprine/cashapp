@@ -56,7 +56,7 @@ struct PostPhoneNumberView: View {
                 
                 if activeScreen == .cashtag {
                     NavigationLink(
-                        destination: PhoneNumberOnboardingView(),
+                        destination: InviteContactsView(),
                         label: {
                             HStack {
                                 Text("Continue")

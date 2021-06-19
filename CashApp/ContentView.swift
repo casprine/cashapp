@@ -9,13 +9,16 @@ import SwiftUI
 import FontAwesomeSwiftUI
 
 struct ContentView: View {
-    
     init(){
         FontAwesome.register()
     }
     
     var body: some View {
-            SplashScreen()
+        NavigationView{
+            PhoneNumberOnboardingView()
+                .navigationBarHidden(true)
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

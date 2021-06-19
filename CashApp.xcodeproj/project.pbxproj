@@ -17,7 +17,6 @@
 		AF3377B1267BC430009A29AE /* CashMarket-MediumRounded.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF3377AE267BC430009A29AE /* CashMarket-MediumRounded.otf */; };
 		AF3377B2267BC430009A29AE /* CashMarket-RegularRounded.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF3377AF267BC430009A29AE /* CashMarket-RegularRounded.otf */; };
 		AF3377B5267BCC68009A29AE /* PostPhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377B4267BCC68009A29AE /* PostPhoneNumberView.swift */; };
-		AF3377BB267BCF77009A29AE /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377BA267BCF77009A29AE /* ContactsViewModel.swift */; };
 		AF3377BD267BD4BF009A29AE /* InviteContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377BC267BD4BF009A29AE /* InviteContactsView.swift */; };
 		AF3377BF267BD4EF009A29AE /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377BE267BD4EF009A29AE /* ContactService.swift */; };
 		AF3377C1267BD6F3009A29AE /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377C0267BD6F3009A29AE /* WelcomeScreen.swift */; };
@@ -25,6 +24,7 @@
 		AF3377C5267BDA17009A29AE /* BankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3377C4267BDA17009A29AE /* BankingView.swift */; };
 		AF3377C8267BDEB9009A29AE /* FontAwesomeSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF3377C7267BDEB9009A29AE /* FontAwesomeSwiftUI */; };
 		AF9D3E67267CCE2600414027 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9D3E66267CCE2600414027 /* SplashScreen.swift */; };
+		AF9D3E69267D041100414027 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9D3E68267D041000414027 /* ContactStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,13 +40,13 @@
 		AF3377AF267BC430009A29AE /* CashMarket-RegularRounded.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CashMarket-RegularRounded.otf"; sourceTree = "<group>"; };
 		AF3377B3267BC459009A29AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AF3377B4267BCC68009A29AE /* PostPhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPhoneNumberView.swift; sourceTree = "<group>"; };
-		AF3377BA267BCF77009A29AE /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		AF3377BC267BD4BF009A29AE /* InviteContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteContactsView.swift; sourceTree = "<group>"; };
 		AF3377BE267BD4EF009A29AE /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
 		AF3377C0267BD6F3009A29AE /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		AF3377C2267BD9F4009A29AE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AF3377C4267BDA17009A29AE /* BankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingView.swift; sourceTree = "<group>"; };
 		AF9D3E66267CCE2600414027 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		AF9D3E68267D041000414027 /* ContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,6 @@
 				AF3377B3267BC459009A29AE /* Info.plist */,
 				AF33779A267BBD41009A29AE /* CashAppApp.swift */,
 				AF33779C267BBD41009A29AE /* ContentView.swift */,
-				AF3377BA267BCF77009A29AE /* ContactsViewModel.swift */,
 				AF3377B4267BCC68009A29AE /* PostPhoneNumberView.swift */,
 				AF3377A8267BC394009A29AE /* PhoneNumberOnboardingView.swift */,
 				AF3377AA267BC410009A29AE /* TextStyles.swift */,
@@ -92,10 +91,11 @@
 				AF3377BE267BD4EF009A29AE /* ContactService.swift */,
 				AF3377C2267BD9F4009A29AE /* HomeView.swift */,
 				AF3377C4267BDA17009A29AE /* BankingView.swift */,
+				AF9D3E68267D041000414027 /* ContactStore.swift */,
+				AF9D3E66267CCE2600414027 /* SplashScreen.swift */,
 				AF33779E267BBD42009A29AE /* Assets.xcassets */,
 				AF3377A0267BBD42009A29AE /* Preview Content */,
 				AF3377AC267BC42F009A29AE /* fonts */,
-				AF9D3E66267CCE2600414027 /* SplashScreen.swift */,
 			);
 			path = CashApp;
 			sourceTree = "<group>";
@@ -203,10 +203,10 @@
 				AF3377BD267BD4BF009A29AE /* InviteContactsView.swift in Sources */,
 				AF3377C3267BD9F4009A29AE /* HomeView.swift in Sources */,
 				AF3377C1267BD6F3009A29AE /* WelcomeScreen.swift in Sources */,
+				AF9D3E69267D041100414027 /* ContactStore.swift in Sources */,
 				AF3377C5267BDA17009A29AE /* BankingView.swift in Sources */,
 				AF3377B5267BCC68009A29AE /* PostPhoneNumberView.swift in Sources */,
 				AF3377BF267BD4EF009A29AE /* ContactService.swift in Sources */,
-				AF3377BB267BCF77009A29AE /* ContactsViewModel.swift in Sources */,
 				AF33779D267BBD41009A29AE /* ContentView.swift in Sources */,
 				AF33779B267BBD41009A29AE /* CashAppApp.swift in Sources */,
 			);
