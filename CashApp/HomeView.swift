@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import FontAwesomeSwiftUI
 
 struct HomeView: View {
     
     init() {
         UITabBar.appearance().backgroundColor = UIColor(Color("gray.50"))
-       }
-
+        
+    }
+    
     var body: some View {
         TabView{
             BankingView().tabItem{
@@ -20,22 +22,58 @@ struct HomeView: View {
             }
             .edgesIgnoringSafeArea(.vertical)
             
-            
-            SecondView().tabItem{
-                Image(systemName: "checkmark")
+            CardView().tabItem{
+                Image(systemName: "creditcard")
             }
+            .edgesIgnoringSafeArea(.vertical)
+            
+            SendMoneyView().tabItem{
+                Image(systemName: "bitcoinsign.circle")
+            }
+            .edgesIgnoringSafeArea(.vertical)
+            
+            InvestingView().tabItem{
+                Image(systemName: "cloud")
+            }
+            .edgesIgnoringSafeArea(.vertical)
+            
+            ActivityView().tabItem{
+                Image(systemName: "clock")
+            }
+            .edgesIgnoringSafeArea(.vertical)
         }
     }
 }
 
 
-struct SecondView: View{
+struct ActivityView: View {
+    var body: some View {
+        Text("Activity View")
+    }
+}
+
+
+struct InvestingView: View {
+    var body: some View {
+        Text("Investing View")
+    }
+}
+
+
+struct SendMoneyView: View {
+    var body: some View {
+        Text("Send Money View")
+    }
+}
+
+
+struct CardView: View{
     init() {
         UITabBar.appearance().backgroundColor = UIColor(Color("gray.50"))
-       }
-
+    }
+    
     var body: some View {
-            Text("Something here")
+        Text("Something here")
     }
 }
 

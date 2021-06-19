@@ -39,9 +39,10 @@ struct HeaderView: View {
         HStack{
             Text("Banking").medium(size: 28)
             Spacer()
-            Image(systemName: "person.crop.circle")
-                .foregroundColor(Color("gray.800"))
-                .font(.system(size: 30))
+            
+            ProfileIcon()
+            
+
             
         }.padding()
     }

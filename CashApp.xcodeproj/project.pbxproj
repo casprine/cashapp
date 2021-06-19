@@ -25,6 +25,7 @@
 		AF3377C8267BDEB9009A29AE /* FontAwesomeSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF3377C7267BDEB9009A29AE /* FontAwesomeSwiftUI */; };
 		AF9D3E67267CCE2600414027 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9D3E66267CCE2600414027 /* SplashScreen.swift */; };
 		AF9D3E69267D041100414027 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9D3E68267D041000414027 /* ContactStore.swift */; };
+		AFCC0C63267E305600FC0D08 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC0C62267E305600FC0D08 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		AF3377C4267BDA17009A29AE /* BankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingView.swift; sourceTree = "<group>"; };
 		AF9D3E66267CCE2600414027 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		AF9D3E68267D041000414027 /* ContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStore.swift; sourceTree = "<group>"; };
+		AFCC0C62267E305600FC0D08 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				AF3377C2267BD9F4009A29AE /* HomeView.swift */,
 				AF3377C4267BDA17009A29AE /* BankingView.swift */,
 				AF9D3E68267D041000414027 /* ContactStore.swift */,
+				AFCC0C62267E305600FC0D08 /* ProfileView.swift */,
 				AF9D3E66267CCE2600414027 /* SplashScreen.swift */,
 				AF33779E267BBD42009A29AE /* Assets.xcassets */,
 				AF3377A0267BBD42009A29AE /* Preview Content */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9D3E67267CCE2600414027 /* SplashScreen.swift in Sources */,
+				AFCC0C63267E305600FC0D08 /* ProfileView.swift in Sources */,
 				AF3377AB267BC410009A29AE /* TextStyles.swift in Sources */,
 				AF3377A9267BC394009A29AE /* PhoneNumberOnboardingView.swift in Sources */,
 				AF3377BD267BD4BF009A29AE /* InviteContactsView.swift in Sources */,

@@ -11,7 +11,7 @@ import SwiftUI
 struct CashAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
                 .environmentObject(ContactStore())
         }
     }
