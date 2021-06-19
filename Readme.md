@@ -4,8 +4,7 @@ Some of CashApps views built with SwiftUI. This project is primarily for educati
 
 # Requirement
 
-- Xcode 12.4 or up
-- SwiftUI support
+- Xcode 13-beta or up
 
 # Design source
 
