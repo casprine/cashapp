@@ -28,7 +28,7 @@ struct ProfileView: View {
                 
             }
             
-            ScrollView {
+            ScrollView (showsIndicators: false) {
                 VStack(spacing:10){
                     HStack{
                         Image(systemName: "qrcode")
@@ -99,20 +99,47 @@ struct ProfileView: View {
                     
                     Divider()
                     
-                    
-                    
-                    
                     VStack{
                         NavLink(title:"Personal", icon:"person.fill")
                         NavLink(title:"Support", icon:"questionmark.circle.fill")
                         NavLink(title:"Privacy & Security", icon:"checkmark.shield.fill")
                         NavLink(title:"Notifications", icon:"moon.circle")
                         NavLink(title:"Documents", icon:"doc.fill")
-                        
                     }
                     
+                    VStack(alignment:.center){
+                        
+                        Button(action:{
+                            withAnimation{
+                                
+                            }
+                        }) {
+                            Text("Sign Out")
+                                .medium(size: 18)
+                                .frame(maxWidth:.infinity)
+                                .padding(.vertical, 20)
+                        }
+                        .background(Color.white)
+                        .frame(width:geometry.size.width)
+                        
+                        
+                        
+                        Text("Sqaure, Inc.'s Privacy Policy, Terms of Service,\nand Open Source Software")
+                            .book(size:15)
+                            .multilineTextAlignment(.center)
+                            .padding(.top, 20)
+                            .foregroundColor(Color("gray.700"))
+                        
+                        
+
+                    }
+                    .padding(.vertical, 50)
+                    .frame(width:geometry.size.width)
+                    .background(Color("gray.100"))
+
                 }
                 .frame(width:geometry.size.width)
+
             }
         }
     }
@@ -138,20 +165,12 @@ struct ProfileIcon:View {
 }
 
 
-struct SectionDivider: View  {
-    var height : CGFloat
-    var body: some View {
-        Rectangle()
-            .fill(Color("gray.100"))
-            .frame(height: height)
-            .edgesIgnoringSafeArea(.horizontal)
-    }
-}
 
 
 struct NavLink: View {
     var title:String
     var icon : String
+    
     
     var body: some View {
         HStack{
@@ -162,16 +181,15 @@ struct NavLink: View {
             }) {
                 HStack(alignment:.bottom){
                     Image(systemName: icon)
-                        .padding(.leading, 10)
+                        .padding(.leading, 5)
                         .font(.system(size: 18))
                         .foregroundColor(Color("gray.800"))
                     
                     
                     Text("\(title)")
                         .medium(size: 18)
-                        .padding(.leading, 10)
+                        .padding(.leading, 15)
                         .foregroundColor(Color("gray.800"))
-                    
                     Spacer()
                     
                     Image(systemName: "chevron.right")
@@ -184,9 +202,6 @@ struct NavLink: View {
         .padding(.vertical, 5)
     }
 }
-
-
-
 
 
 struct ProfileView_Previews: PreviewProvider {
