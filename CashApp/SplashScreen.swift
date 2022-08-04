@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SplashScreen: View {
-    @State var isActive:Bool = false
+    @State var isActive: Bool = true
     
     var body: some View {
         VStack {
@@ -16,7 +16,6 @@ struct SplashScreen: View {
                 HomeView()
             } else {
                 GeometryReader { geometry in
-                    
                     VStack{
                         Text("Cash App").foregroundColor(Color.white).medium(size:50)
                     }

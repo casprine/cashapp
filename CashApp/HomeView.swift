@@ -12,7 +12,6 @@ struct HomeView: View {
     
     init() {
         UITabBar.appearance().backgroundColor = UIColor(Color("gray.50"))
-        
     }
     
     var body: some View {
